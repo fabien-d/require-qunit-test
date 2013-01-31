@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Test Suite</title>
+	<link rel="stylesheet" href="qunit/qunit.css">
+	<script src="qunit/qunit.js"></script>
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">test markup</div>
+	<!--
+	Simply switching the require version stops tests
+	from running
+	-->
+	<!-- 1 assertion runs -->
+	<script data-main="runner" src="../vendor/require-2.0.6.js"></script>
+	<!--
+	0 assertion runs
+	<script data-main="runner" src="../vendor/require-2.1.4.js"></script>
+	-->
+</body>
+</html>
